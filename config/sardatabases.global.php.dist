@@ -1,0 +1,44 @@
+<?php
+/**
+ * SarDatabases Configuration
+ *
+ * If you have a ./config/autoload/ directory set up for your project, you can
+ * drop this config file in it and change the values as you wish.
+ */
+return array(
+    'sardatabases' => array(
+
+        /**
+         * Environment
+         */
+
+        'environment' => 'development',
+
+        /**
+         * Hosts
+         */
+        'mongo' => array(
+            'default' => array(
+                'production' => 'mongodb://',
+                'development' => 'mongodb://'
+            )
+        ),
+
+        /**
+         * Mysql Hosts
+         */
+        'mysql' => array(
+            'default' => array(
+                'host' => '127.0.0.1',
+                'user' => '',
+                'password' => '',
+                'database' => ''
+            )
+        ),
+
+
+    ),
+    /**
+     * End of SarDatabases configuration
+     */
+);
