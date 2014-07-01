@@ -30,6 +30,12 @@ class SarMysql
 
     private function Open()
     {
+        if(empty($this->host) || 
+           empty($this->user) || 
+           empty($this->database) || 
+            ){
+            return false;
+        }
         $this->conn = mysqli_connect($this->host, $this->user, $this->password);
         mysqli_select_db($this->conn, $this->database);
     }
