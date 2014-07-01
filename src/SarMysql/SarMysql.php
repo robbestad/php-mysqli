@@ -30,9 +30,9 @@ class SarMysql
 
     private function Open()
     {
-        if(empty($this->host) || 
-           empty($this->user) || 
-           empty($this->database) || 
+        if(empty($this->host) ||
+           empty($this->user) ||
+           empty($this->database) 
             ){
             return false;
         }
