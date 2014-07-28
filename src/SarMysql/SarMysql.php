@@ -2,6 +2,8 @@
 
 namespace SarMysql;
 
+require __DIR__.'/../../../../shopsys/sysstdlib/src/SysStdLib/SysStdLib.php';
+
 class SarMysql
 {
     private $conn = '';
@@ -24,7 +26,10 @@ class SarMysql
 
     public function getConfig()
     {
-        return include (dirname(__DIR__)) . '/../../../../config/autoload/sarmysql.config.local.php';
+
+        $stdlib = new \SysStdLib\SysStdLib();
+        return $stdlib->getConfig('sarmysql', __DIR__);
+//        return include (dirname(__DIR__)) . '/../../../../config/autoload/sarmysql.config.local.php';
     }
 
 
