@@ -2,7 +2,7 @@
 
 namespace SarMysql;
 
-require __DIR__.'/../../../../shopsys/sysstdlib/src/SysStdLib/SysStdLib.php';
+require_once __DIR__.'/../../../../shopsys/sysstdlib/src/SysStdLib/SysStdLib.php';
 
 class SarMysql
 {
